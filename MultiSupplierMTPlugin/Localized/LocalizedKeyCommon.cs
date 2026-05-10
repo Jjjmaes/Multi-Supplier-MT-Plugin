@@ -56,6 +56,9 @@
         [LocalizedValue("a3700cd7-ce8d-4eb6-bf72-dfb8c0a8fc25", "Aliyun", "阿里")]
         public static LocalizedKeyCommon Provider_Aliyun { get; private set; }
 
+        [LocalizedValue("f7c8e9d0-514a-4b3c-8f21-a1b2c3d4e5f6", "Qwen-MT", "通义 Qwen-MT")]
+        public static LocalizedKeyCommon Provider_Qwen_MT { get; private set; }
+
         [LocalizedValue("3e2dfcbe-645b-4c7d-aef6-f3483ee97110", "Huoshan", "火山")]
         public static LocalizedKeyCommon Provider_Huoshan { get; private set; }
 

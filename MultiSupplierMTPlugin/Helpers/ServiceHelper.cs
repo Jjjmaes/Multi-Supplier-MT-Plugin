@@ -172,6 +172,7 @@ namespace MultiSupplierMTPlugin.Helpers
         public const string Lingvanex_BuiltIn = nameof(Lingvanex_BuiltIn);
 
         public const string Aliyun = nameof(Aliyun);
+        public const string Qwen_MT = nameof(Qwen_MT);
         public const string Baidu = nameof(Baidu);
         public const string Caiyun = nameof(Caiyun);
         public const string Huoshan = nameof(Huoshan);
@@ -292,6 +293,7 @@ namespace MultiSupplierMTPlugin.Helpers
             = new Dictionary<string, Func<MultiSupplierMTOptions, ProviderOptions, MultiSupplierMTService>>
         {
             { ServiceNames.Aliyun, (mtOption, option) => new Providers.Aliyun.Service(mtOption, option) },
+            { ServiceNames.Qwen_MT, (mtOption, option) => new Providers.QwenMT.Service(mtOption, option) },
             { ServiceNames.Tencent, (mtOption, option) => new Providers.Tencent.Service(mtOption, option) },
             { ServiceNames.Baidu, (mtOption, option) => new Providers.Baidu.Service(mtOption, option) },
             { ServiceNames.Huoshan, (mtOption, option) => new Providers.Huoshan.Service(mtOption, option) },

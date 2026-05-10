@@ -94,6 +94,7 @@ namespace MultiSupplierMTPlugin
         public string[] EnableProviders { get; set; } = new string[]
         {
             ServiceNames.Aliyun,
+            ServiceNames.Qwen_MT,
             ServiceNames.Baidu,
             ServiceNames.Caiyun,
             ServiceNames.DeepL,
@@ -242,6 +243,7 @@ namespace MultiSupplierMTPlugin
         public static Dictionary<string, Type> General = new Dictionary<string, Type>
         {
             {ServiceNames.Aliyun, typeof(Providers.Aliyun.GeneralSettings)},
+            {ServiceNames.Qwen_MT, typeof(Providers.QwenMT.GeneralSettings)},
             {ServiceNames.Anthropic_LLM, typeof(Providers.Anthropic.GeneralSettings)},
             {ServiceNames.Baidu, typeof(Providers.Baidu.GeneralSettings)},
             {ServiceNames.Caiyun, typeof(Providers.Caiyun.GeneralSettings)},
@@ -266,6 +268,7 @@ namespace MultiSupplierMTPlugin
         public static Dictionary<string, Type> Secure = new Dictionary<string, Type>
         {
             {ServiceNames.Aliyun, typeof(Providers.Aliyun.SecureSettings)},
+            {ServiceNames.Qwen_MT, typeof(Providers.QwenMT.SecureSettings)},
             {ServiceNames.Anthropic_LLM, typeof(Providers.Anthropic.SecureSettings)},
             {ServiceNames.Baidu, typeof(Providers.Baidu.SecureSettings)},
             {ServiceNames.Caiyun, typeof(Providers.Caiyun.SecureSettings)},
